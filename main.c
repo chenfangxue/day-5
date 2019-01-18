@@ -81,11 +81,11 @@ int main()
         {
             for (int i = 0; i < index; i++)
             {
-                a=arr[i].yuwen+arr[i].shuxue+arr[i].yingyu;
-                if(a<180){
-                    printf("第%d名学生%s成绩不及格\n",i+1,arr[i].name);
+                a = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
+                if (a < 180)
+                {
+                    printf("第%d名学生%s成绩不及格\n", i + 1, arr[i].name);
                 }
-
             }
             printf("筛选成功，点击回车继续\n");
             char x;
@@ -94,6 +94,17 @@ int main()
         }
         if (code == 5)
         {
+            for (int i = 0; i < index; i++)
+            {
+                if (arr[i].yuwen < 60 && arr[i].shuxue < 60 && arr[i].yingyu < 60)
+                {
+                    printf("第%d名学生%s的每一科都不及格\n", i + 1, arr[i].name);
+                }
+            }
+            printf("筛选完成，点击回车继续\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 6)
         {
