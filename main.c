@@ -13,6 +13,7 @@ int main()
     printf("进入学生成绩管理系统\n");
     struct student arr[1000];
     int index = 0;
+    int a = 0;
     while (1)
 
     {
@@ -78,6 +79,18 @@ int main()
         }
         if (code == 4)
         {
+            for (int i = 0; i < index; i++)
+            {
+                a=arr[i].yuwen+arr[i].shuxue+arr[i].yingyu;
+                if(a<180){
+                    printf("第%d名学生%s成绩不及格\n",i+1,arr[i].name);
+                }
+
+            }
+            printf("筛选成功，点击回车继续\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 5)
         {
