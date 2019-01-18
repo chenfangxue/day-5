@@ -113,6 +113,7 @@ int main()
 
             for (int i = 0; i < index; i++)
             {
+                int a = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
                 if (b < a)
                 {
                     b = a;
@@ -128,6 +129,25 @@ int main()
         }
         if (code == 7)
         {
+            double b = 0.0;
+            int c = 0;
+            for (int i = 0; i < index; i++)
+            {
+                if (arr[i].yuwen >= 60 && arr[i].shuxue >= 60 && arr[i].yingyu >= 60)
+                {
+                    double avg = (arr[i].yuwen + arr[i].shuxue + arr[i].yingyu) / 3.0;
+                    if (b < avg)
+                    {
+                        b = avg;
+                        c = i;
+                    }
+                }
+            }
+            printf("平均分最高且没有不及格科目的学生姓名为%s，语文：%d，数学%d，英语%d\n", arr[c].name, arr[c].yuwen, arr[c].shuxue, arr[c].yingyu);
+            printf("\n点击回车继续\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 8)
         {
