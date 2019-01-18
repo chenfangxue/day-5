@@ -45,29 +45,40 @@ int main()
         }
         if (code == 2)
         {
-            
+            if (index > 0)
+            {
+                index--;
+                printf("删除成功，点击回车继续\n");
+            }
+            else
+            {
+                printf("删除失败，点击回车继续\n");
+            }
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
-        if (code == 3)
-        {
-        }
-        if (code == 4)
-        {
-        }
-        if (code == 5)
-        {
-        }
-        if (code == 6)
-        {
-        }
-        if (code == 7)
-        {
-        }
-        if (code == 8)
-        {
-            printf("程序已退出\n");
-            break;
-        }
+    if (code == 3)
+    {
     }
+    if (code == 4)
+    {
+    }
+    if (code == 5)
+    {
+    }
+    if (code == 6)
+    {
+    }
+    if (code == 7)
+    {
+    }
+    if (code == 8)
+    {
+        printf("程序已退出\n");
+        break;
+    }
+}
 
-    return 0;
+return 0;
 }
