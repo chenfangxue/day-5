@@ -108,6 +108,23 @@ int main()
         }
         if (code == 6)
         {
+            int b = 0;
+            int c;
+
+            for (int i = 0; i < index; i++)
+            {
+                if (b < a)
+                {
+                    b = a;
+                }
+                c = i + 1;
+            }
+            printf("第%d名学生%s的总成绩最高，最高为%d\n", c, arr[index].name, b);
+            printf("筛选完成，点击回车继续\n");
+
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 7)
         {
