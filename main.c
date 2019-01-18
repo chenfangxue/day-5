@@ -58,27 +58,42 @@ int main()
             scanf("%c", &x);
             scanf("%c", &x);
         }
-    if (code == 3)
-    {
+        if (code == 3)
+        {
+            if (index > 0)
+            {
+                for (int i = 0; i < index; i++)
+                {
+                    printf("学生%s的语文成绩为%d,数学成绩为%d,英语成绩为%d\n", arr[i].name, arr[i].yuwen, arr[i].shuxue, arr[i].yingyu);
+                }
+            }
+            else
+            {
+                printf("无可显示学生成绩\n");
+            }
+            printf("点击回车继续\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
+        }
+        if (code == 4)
+        {
+        }
+        if (code == 5)
+        {
+        }
+        if (code == 6)
+        {
+        }
+        if (code == 7)
+        {
+        }
+        if (code == 8)
+        {
+            printf("程序已退出\n");
+            break;
+        }
     }
-    if (code == 4)
-    {
-    }
-    if (code == 5)
-    {
-    }
-    if (code == 6)
-    {
-    }
-    if (code == 7)
-    {
-    }
-    if (code == 8)
-    {
-        printf("程序已退出\n");
-        break;
-    }
-}
 
-return 0;
+    return 0;
 }
